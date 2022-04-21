@@ -1,38 +1,29 @@
 @import './mixins';
 
-.d-grid{
+.d-grid {
   display: grid;
 }
 
-.cols-2{
-  grid-template-columns: repeat(2,1fr);
-}
-
-.cols-3{
-  grid-template-columns: repeat(3,1fr);
-}
-
-.cols-4{
-  grid-template-columns: repeat(4,1fr);
-}
-
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.jc-sb{
+.jc-sb {
   justify-content: space-between;
 }
 
-.jc-c{
+.jc-c {
   justify-content: center;
 }
 
-.title{
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 56px;
-text-transform: uppercase;
+.ai-c {
+  align-items: center;
 }
 
+.title {
+  font-style: normal;
+  font-weight: 700;
+  @include adaptiv-value('font-size', 48, 24, 0);
+  @include adaptiv-value('line-height', 56, 30, 0);
+  text-transform: uppercase;
+}

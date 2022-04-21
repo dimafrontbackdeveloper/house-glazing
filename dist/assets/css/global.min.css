@@ -2,18 +2,6 @@
   display: grid;
 }
 
-.cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.cols-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .d-flex {
   display: flex;
 }
@@ -26,10 +14,14 @@
   justify-content: center;
 }
 
+.ai-c {
+  align-items: center;
+}
+
 .title {
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: calc(24px + 24 * ((100vw - 320px) / 1600));
+  line-height: calc(30px + 26 * ((100vw - 320px) / 1600));
   text-transform: uppercase;
 }
