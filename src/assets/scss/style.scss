@@ -16,7 +16,12 @@
 @import './content.scss';
 
 // шрифты
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 
 // глобальные стили
 @import './global.scss';
+
+body{
+   font-family: 'Roboto';
+   font-weight: 400;
+}

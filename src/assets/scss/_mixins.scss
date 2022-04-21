@@ -7,7 +7,7 @@
 
 // Адаптивные свойства
 $maxWidth: 1920;
-$maxWidthContainer: 1180;
+$maxWidthContainer: 1275;
 
 @mixin adaptiv-value($property, $startSize, $minSize, $type) {
   $addSize: $startSize - $minSize;
