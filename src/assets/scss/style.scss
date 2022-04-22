@@ -545,3 +545,114 @@ body {
       text-align: center;
    }
 }
+
+.rehau {
+   color: #5B5B5B;
+
+   h2{
+      @include adaptiv-value('margin-bottom', 70, 30, 0);
+      text-align: center;
+   }
+
+   // .rehau__row
+
+   &__row {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 30px;
+      grid-template-areas: 
+      "a b"
+      "c c";
+
+      @include breakpoint(1024px){
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "b"
+         "c"
+         "a";
+      }
+   }
+
+   // .rehau__column
+
+   &__column {
+      &:nth-of-type(1){
+         grid-area: a;
+      }
+      &:nth-of-type(2){
+         grid-area: b;
+         @include breakpoint(1024px){
+         margin-bottom: 60px;
+         }
+         @include breakpoint(768px){
+            margin-bottom: 40px;
+         }
+      }
+      &:nth-of-type(3){
+         grid-area: c;
+         @include breakpoint(1024px){
+            margin-bottom: 100px;
+         }
+
+         @include breakpoint(768px){
+            margin-bottom: 50px;
+         }
+
+         @include breakpoint(425px){
+            margin-bottom: 40px;
+         }
+      }
+   }
+
+   // .rehau__column-item
+
+   &__column-item {
+
+  
+   }
+
+   // .rehau__column-img
+
+   &__column-img {
+      @include adaptiv-value('margin-bottom', 25, 10, 0);
+
+
+         @include breakpoint(1024px){
+            display: flex;
+            justify-content: center
+         }
+      
+   }
+
+   // .rehau__column-row
+
+   &__column-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      @include adaptiv-value('gap', 30, 15, 0);
+  
+   }
+
+   // .rehau__column-column
+
+   &__column-column {
+
+   }
+
+   // .rehau__bottom-text
+
+   &__bottom-text{
+font-weight: 700;
+text-align: center;
+@include adaptiv-value('margin-bottom', 15, 7, 0);
+   }
+
+   button{
+      display: block;
+      margin: 0 auto;
+@include adaptiv-value('padding-left', 37, 15, 0);
+@include adaptiv-value('padding-right', 37, 15, 0);
+   }
+}
+
+
