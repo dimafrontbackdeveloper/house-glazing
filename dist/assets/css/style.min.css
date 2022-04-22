@@ -710,3 +710,39 @@ body {
   padding-left: calc(15px + 22 * ((100vw - 320px) / 1600));
   padding-right: calc(15px + 22 * ((100vw - 320px) / 1600));
 }
+
+.lamination {
+  color: #5B5B5B;
+}
+.lamination h2 {
+  text-align: center;
+  margin-bottom: calc(15px + 10 * ((100vw - 320px) / 1600));
+}
+.lamination h3 {
+  margin-bottom: calc(25px + 15 * ((100vw - 320px) / 1600));
+}
+.lamination__row {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: calc(40px + 50 * ((100vw - 320px) / 1600));
+  column-gap: calc(50px + 50 * ((100vw - 320px) / 1600));
+  row-gap: calc(20px + 20 * ((100vw - 320px) / 1600));
+}
+.lamination__column-item h4 {
+  text-align: center;
+}
+.lamination__column-img {
+  margin-bottom: calc(10px + 10 * ((100vw - 320px) / 1600));
+  display: flex;
+  justify-content: center;
+}
+.lamination__block {
+  max-width: 450px;
+  background-color: #9D62DD;
+  padding-top: calc(10px + 15 * ((100vw - 320px) / 1600));
+  padding-right: calc(10px + 15 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(10px + 15 * ((100vw - 320px) / 1600));
+  padding-left: calc(10px + 15 * ((100vw - 320px) / 1600));
+  margin: 0 auto;
+  text-decoration: underline;
+  color: #fff;
+}
