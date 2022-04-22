@@ -475,7 +475,7 @@ body {
       font-weight: 700;
       text-align: center;
 
-      &:first-of-type{
+      &:first-of-type {
          color: $purple;
          margin-bottom: 10px;
       }
@@ -484,12 +484,13 @@ body {
 
 .non-standard {
    background-color: $purple;
-   
 
-   h2{
+
+   h2 {
       text-align: center;
       @include adaptiv-value('margin-bottom', 70, 30, 0);
    }
+
    // .non-standard__row
 
    &__row {
@@ -497,16 +498,16 @@ body {
       flex-wrap: wrap;
       font-family: 'Tahoma';
 
-      @include breakpoint(1024px){
+      @include breakpoint(1024px) {
          column-gap: 100px;
          row-gap: 50px;
       }
 
-      @include breakpoint(425px){
+      @include breakpoint(425px) {
          column-gap: 0px;
       }
 
-      &:last-child{
+      &:last-child {
          margin-bottom: 0px;
       }
    }
@@ -516,20 +517,18 @@ body {
    &__column {
       flex: 0 0 calc(33% - 200px);
 
-      @include breakpoint(1024px){
+      @include breakpoint(1024px) {
          flex: 0 0 calc(50% - 100px);
       }
 
-      @include breakpoint(425px){
+      @include breakpoint(425px) {
          flex: 0 0 calc(100%);
       }
    }
 
    // .non-standard__column-item
 
-   &__column-item {
- 
-   }
+   &__column-item {}
 
    // .non-standard__column-img
 
@@ -549,7 +548,7 @@ body {
 .rehau {
    color: #5B5B5B;
 
-   h2{
+   h2 {
       @include adaptiv-value('margin-bottom', 70, 30, 0);
       text-align: center;
    }
@@ -560,45 +559,50 @@ body {
       display: grid;
       grid-template-columns: 1fr 2fr;
       column-gap: 30px;
-      grid-template-areas: 
-      "a b"
-      "c c";
+      grid-template-areas:
+         "a b"
+         "c c";
 
-      @include breakpoint(1024px){
+      @include breakpoint(1024px) {
          grid-template-columns: 1fr;
-         grid-template-areas: 
-         "b"
-         "c"
-         "a";
+         grid-template-areas:
+            "b"
+            "c"
+            "a";
       }
    }
 
    // .rehau__column
 
    &__column {
-      &:nth-of-type(1){
+      &:nth-of-type(1) {
          grid-area: a;
       }
-      &:nth-of-type(2){
+
+      &:nth-of-type(2) {
          grid-area: b;
-         @include breakpoint(1024px){
-         margin-bottom: 60px;
+
+         @include breakpoint(1024px) {
+            margin-bottom: 60px;
          }
-         @include breakpoint(768px){
+
+         @include breakpoint(768px) {
             margin-bottom: 40px;
          }
       }
-      &:nth-of-type(3){
+
+      &:nth-of-type(3) {
          grid-area: c;
-         @include breakpoint(1024px){
+
+         @include breakpoint(1024px) {
             margin-bottom: 100px;
          }
 
-         @include breakpoint(768px){
+         @include breakpoint(768px) {
             margin-bottom: 50px;
          }
 
-         @include breakpoint(425px){
+         @include breakpoint(425px) {
             margin-bottom: 40px;
          }
       }
@@ -606,10 +610,7 @@ body {
 
    // .rehau__column-item
 
-   &__column-item {
-
-  
-   }
+   &__column-item {}
 
    // .rehau__column-img
 
@@ -617,74 +618,71 @@ body {
       @include adaptiv-value('margin-bottom', 25, 10, 0);
 
 
-         @include breakpoint(1024px){
-            display: flex;
-            justify-content: center
-         }
-      
+      @include breakpoint(1024px) {
+         display: flex;
+         justify-content: center
+      }
+
    }
 
    // .rehau__column-row
 
    &__column-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       @include adaptiv-value('gap', 30, 15, 0);
-  
+
    }
 
    // .rehau__column-column
 
-   &__column-column {
-
-   }
+   &__column-column {}
 
    // .rehau__bottom-text
 
-   &__bottom-text{
-font-weight: 700;
-text-align: center;
-@include adaptiv-value('margin-bottom', 15, 7, 0);
+   &__bottom-text {
+      font-weight: 700;
+      text-align: center;
+      @include adaptiv-value('margin-bottom', 15, 7, 0);
    }
 
-   button{
+   button {
       display: block;
       margin: 0 auto;
-@include adaptiv-value('padding-left', 37, 15, 0);
-@include adaptiv-value('padding-right', 37, 15, 0);
+      @include adaptiv-value('padding-left', 37, 15, 0);
+      @include adaptiv-value('padding-right', 37, 15, 0);
    }
 }
 
 .lamination {
    color: #5B5B5B;
 
-   h2{
-text-align: center;
-@include adaptiv-value('margin-bottom',25, 15, 0);
+   h2 {
+      text-align: center;
+      @include adaptiv-value('margin-bottom', 25, 15, 0);
    }
 
-   h3{
-      @include adaptiv-value('margin-bottom',40, 25, 0);
+   h3 {
+      @include adaptiv-value('margin-bottom', 40, 25, 0);
    }
 
    // .lamination__row
 
    &__row {
-      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-      @include adaptiv-value('margin-bottom',90, 40, 0);
-      @include adaptiv-value('column-gap',100, 50, 0);
-      @include adaptiv-value('row-gap',40, 20, 0);
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      @include adaptiv-value('margin-bottom', 90, 40, 0);
+      @include adaptiv-value('column-gap', 100, 50, 0);
+      @include adaptiv-value('row-gap', 40, 20, 0);
    }
 
    // .lamination__column
 
-   &__column {
-   }
+   &__column {}
 
    // .lamination__column-item
 
    &__column-item {
-      h4{
+      h4 {
          text-align: center;
       }
    }
@@ -692,7 +690,7 @@ text-align: center;
    // .lamination__column-img
 
    &__column-img {
-      @include adaptiv-value('margin-bottom',20, 10, 0);
+      @include adaptiv-value('margin-bottom', 20, 10, 0);
       display: flex;
       justify-content: center;
    }
@@ -702,21 +700,136 @@ text-align: center;
    &__block {
       max-width: 450px;
       background-color: $purple;
-      @include adaptiv-value('padding-top',25, 10, 0);
-      @include adaptiv-value('padding-right',25, 10, 0);
-      @include adaptiv-value('padding-bottom',25, 10, 0);
-      @include adaptiv-value('padding-left',25, 10, 0);
+      @include adaptiv-value('padding-top', 25, 10, 0);
+      @include adaptiv-value('padding-right', 25, 10, 0);
+      @include adaptiv-value('padding-bottom', 25, 10, 0);
+      @include adaptiv-value('padding-left', 25, 10, 0);
       margin: 0 auto;
       text-decoration: underline;
-      color:#fff;
+      color: #fff;
+      text-align: center;
    }
 }
-.section {
-}
-.container {
-}
-.title {
-}
+
+.double-glazing {
+   color: #5B5B5B;
+
+   h2 {
+      text-align: center;
+      @include adaptiv-value('margin-bottom', 35, 20, 0);
+   }
+
+   // .double-glazing__row
+
+   &__row {
 
 
+      &:first-of-type {
+         @include adaptiv-value('gap', 12, 6, 0);
+         justify-content: center;
+         flex-wrap: wrap;
+         @include adaptiv-value('margin-bottom', 100, 50, 0);
 
+         .double-glazing__column-item {
+            border-radius: 29px;
+            border: 1px solid #9D62DD;
+            background: #F6F1FC;
+            @include adaptiv-value('padding-top', 12, 6, 0);
+            @include adaptiv-value('padding-right', 30, 15, 0);
+            @include adaptiv-value('padding-bottom', 12, 6, 0);
+            @include adaptiv-value('padding-left', 30, 15, 0);
+            transition: 0.1s;
+            cursor: pointer;
+
+            &:hover {
+               background-color: $purple;
+               border: 1px solid $purple;
+               color: #FFFFFF;
+            }
+
+            &--active {
+               background-color: $purple;
+               border: 1px solid $purple;
+               color: #FFFFFF;
+            }
+         }
+      }
+   }
+
+   // .double-glazing__row
+
+   &__row {
+      grid-template-columns: repeat(2,1fr);
+      @include adaptiv-value('column-gap', 30, 15, 0);
+
+      @include breakpoint(768px){
+      grid-template-columns: repeat(1,1fr);
+      }
+
+   }
+
+   // .double-glazing__column
+
+   &__column {
+      &:first-child{
+         @include breakpoint(768px){
+            margin-bottom: 60px;
+         }
+      }
+   }
+
+   // .double-glazing__column-item
+
+   &__column-item {
+
+      h3{
+         color:$purple;
+         @include adaptiv-value('font-size', 24,18, 0);
+         @include adaptiv-value('line-height', 28,22, 0);
+         text-transform: uppercase;
+         @include adaptiv-value('margin-bottom', 40, 20, 0);
+      }
+
+      ul{
+         @include adaptiv-value('margin-bottom', 50, 30, 0);
+         
+         li{
+            position: relative;
+            @include adaptiv-value('margin-bottom', 20, 10, 0);
+            @include adaptiv-value('padding-left', 35, 15, 0);
+
+            
+            &::before{
+               content: '';
+               position: absolute;
+               left: 0;
+               top: 3px;
+               display: inline-block;
+            @include adaptiv-value('margin-right', 35, 15, 0);
+            @include adaptiv-value('width', 10, 7, 0);
+            @include adaptiv-value('height', 10, 7, 0);
+               background-color: $purple;
+               border-radius: 100%;
+            }
+
+            &:last-child{
+               margin-bottom: 0px;
+            }
+
+         }
+      }
+
+      button{
+         @include adaptiv-value('padding-left', 40, 20, 0);
+         @include adaptiv-value('padding-right', 40, 20, 0);
+         display: block;
+         margin: 0 auto;
+      }
+
+   }
+
+   // .double-glazing__column-img
+
+   &__column-img {}
+
+}
