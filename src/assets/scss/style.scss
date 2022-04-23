@@ -923,6 +923,8 @@ body {
    &__row {
       display: grid;
       grid-template-columns: repeat(3,1fr);
+      @include adaptiv-value('margin-bottom', 60, 30, 0);
+
 
       @include breakpoint(768px){
       grid-template-columns: repeat(2,1fr);
@@ -953,8 +955,28 @@ body {
          height: 100%;
       }
    }
+
+		// .examples__bottom
+
+		&__bottom {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         p{
+            text-decoration: underline;
+      @include adaptiv-value('margin-bottom', 30, 15, 0);
+
+         }
+		}
+
+		// .examples__bottom-img
+
+		&__bottom-img {
+      @include adaptiv-value('width', 40, 20, 0);
+      @include adaptiv-value('height', 40, 20, 0);
+		}
+
+
 }
-.section {
-}
-.title {
-}
+

@@ -902,6 +902,7 @@ body {
 .examples__row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: calc(30px + 30 * ((100vw - 320px) / 1600));
 }
 @media screen and (max-width: 768px) {
   .examples__row {
@@ -919,4 +920,17 @@ body {
 .examples__column-img img {
   width: 100%;
   height: 100%;
+}
+.examples__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.examples__bottom p {
+  text-decoration: underline;
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+}
+.examples__bottom-img {
+  width: calc(20px + 20 * ((100vw - 320px) / 1600));
+  height: calc(20px + 20 * ((100vw - 320px) / 1600));
 }
