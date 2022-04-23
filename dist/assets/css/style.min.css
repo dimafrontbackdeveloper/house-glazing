@@ -817,7 +817,6 @@ body {
   left: 0;
   top: 3px;
   display: inline-block;
-  margin-right: calc(15px + 20 * ((100vw - 320px) / 1600));
   width: calc(7px + 3 * ((100vw - 320px) / 1600));
   height: calc(7px + 3 * ((100vw - 320px) / 1600));
   background-color: #9D62DD;
@@ -933,4 +932,139 @@ body {
 .examples__bottom-img {
   width: calc(20px + 20 * ((100vw - 320px) / 1600));
   height: calc(20px + 20 * ((100vw - 320px) / 1600));
+}
+
+.salon {
+  color: #5B5B5B;
+}
+.salon h2 {
+  text-align: center;
+  margin-bottom: calc(30px + 30 * ((100vw - 320px) / 1600));
+}
+.salon iframe {
+  width: 100%;
+  height: 580px;
+}
+.salon__row {
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(15px + 15 * ((100vw - 320px) / 1600));
+  background-color: #EBE0F8;
+}
+@media screen and (max-width: 768px) {
+  .salon__row {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+  }
+}
+.salon__column {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .salon__column {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.salon__column:first-child .salon__column-column:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #D3C9DF;
+}
+@media screen and (max-width: 768px) {
+  .salon__column:first-child .salon__column-column:first-child {
+    padding: 60px 30px;
+  }
+}
+.salon__column:first-child .salon__column-column:first-child h3 {
+  font-weight: 700;
+}
+.salon__column:last-child .salon__column-column:last-child {
+  align-self: start;
+  background-color: #9D62DD;
+  padding: 0px;
+  padding-bottom: calc(10px + 10 * ((100vw - 320px) / 1600));
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .salon__column:last-child .salon__column-column:last-child {
+    display: none;
+  }
+}
+.salon__column:last-child .salon__column-column:last-child h3 {
+  background-color: #DF59CA;
+  margin-bottom: 20px;
+  padding: calc(7px + 8 * ((100vw - 320px) / 1600));
+}
+.salon__column:last-child .salon__column-column:last-child .salon__column-row {
+  padding: calc(7px + 8 * ((100vw - 320px) / 1600));
+}
+.salon__column:last-child .salon__column-column:last-child .salon__column-row:last-of-type {
+  margin-bottom: 20px;
+}
+.salon__column:last-child .salon__column-column:last-child .salon__column-row span big {
+  font-size: 14px;
+}
+.salon__column:last-child .salon__column-column:last-child .salon__time {
+  margin-bottom: 20px;
+  padding: calc(7px + 8 * ((100vw - 320px) / 1600));
+  margin-bottom: 30px;
+}
+.salon__column:last-child .salon__column-column:last-child .salon__column-bottom {
+  padding: 10px 0px;
+  margin: 0px 10px;
+  border: 1px solid #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.salon__column:last-child .salon__column-column:last-child .salon__column-bottom big {
+  font-size: 16px;
+}
+.salon__column-column {
+  padding: calc(20px + 30 * ((100vw - 320px) / 1600));
+}
+.salon__column-img {
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+  display: flex;
+  justify-content: center;
+}
+.salon h3 {
+  font-size: calc(18px + 10 * ((100vw - 320px) / 1600));
+  line-height: calc(27px + 23 * ((100vw - 320px) / 1600));
+}
+.salon h3:first-of-type {
+  margin-bottom: calc(7px + 8 * ((100vw - 320px) / 1600));
+}
+.salon h4 {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 1600));
+  line-height: calc(22px + 11 * ((100vw - 320px) / 1600));
+  margin-bottom: calc(15px + 15 * ((100vw - 320px) / 1600));
+  padding-left: calc(0px + 15 * ((100vw - 320px) / 1600));
+}
+.salon h5 {
+  font-size: calc(14px + 3 * ((100vw - 320px) / 1600));
+}
+.salon ul li {
+  position: relative;
+  margin-bottom: calc(5px + 5 * ((100vw - 320px) / 1600));
+  padding-left: calc(15px + 20 * ((100vw - 320px) / 1600));
+}
+.salon ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: inline-block;
+  width: calc(4px + 3 * ((100vw - 320px) / 1600));
+  height: calc(4px + 3 * ((100vw - 320px) / 1600));
+  background-color: gray;
+  border-radius: 100%;
+}
+.salon ul li:last-child {
+  margin-bottom: 0px;
+}
+.salon ul li a {
+  color: #5B5B5B;
 }
